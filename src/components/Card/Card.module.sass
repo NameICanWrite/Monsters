@@ -1,0 +1,37 @@
+.card
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+
+	padding: 25px
+
+	background-color: #95dada
+	border: 1px solid gray
+	border-radius: 5px
+	backface-visibility: hidden
+	// word-break: break-all
+	text-align: center
+
+	transform: translateZ(0)
+	transition: transform 0.25s ease-out
+
+	&:hover
+		transform: scale(1.05)
+
+	img
+		display: block
+		width: 100%
+
+	p
+		font-size: 20px
+
+	h3
+		margin: 10px
+
+
+	@media screen and (max-width: 900px) 
+		p
+			font-size: 15px
+
+		h3
+			font-size: 25px
